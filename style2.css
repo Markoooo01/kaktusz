@@ -1,0 +1,110 @@
+body{
+    background-color: rgb(255, 103, 0);
+    color: black;
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    max-width: 85%;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'h h h'
+    'n n n'
+    'tartalom tartalom tartalom'
+    'f f f';
+    max-width: 80%;
+    margin: auto;
+    gap: 10px;
+}
+#tartalom{
+    display: grid;
+    grid-area: tartalom;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'kep1 kep2 kep3'
+    'kep4 kep5 kep6'
+    'kep7 kep8 kep9';
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px
+}
+header{
+    grid-area: h;
+    color: white;
+    border-radius: 10px;
+    border: 3px solid darkblue;
+    text-align: center;
+    font-size: 20pt;
+    letter-spacing: 3px;
+    padding: 20px;
+    background-color: dodgerblue;
+}
+nav{
+    grid-area: n;
+    text-align: left;
+    border: 3px solid darkblue;
+    background-color: dodgerblue;
+    border-radius: 10px;
+    padding: 10px;
+    
+
+}
+#kep1{
+    grid-area: kep1;
+    margin: auto;
+}
+#kep2{
+    grid-area: kep2;
+    margin: auto;
+}
+#kep3{
+    grid-area: kep3;
+    margin: auto;
+}
+#kep4{
+    grid-area: kep4;
+    margin: auto;
+}
+#kep5{
+    grid-area: kep5;
+    margin: auto;
+}
+#kep6{
+    grid-area: kep6;
+    margin: auto;
+}
+#kep7{
+    grid-area: kep7;
+    margin: auto;
+}
+#kep8{
+    grid-area: kep8;
+    margin: auto;
+}
+#kep9{
+    grid-area: kep9;
+    margin: auto;
+}
+footer{
+    grid-area: f;
+    color: white;
+    text-align: center;
+    background-color: dodgerblue;
+    border: 3px solid darkblue;
+    border-radius: 10px;
+}
+
+ul{
+    text-decoration: none;
+    text-align: left;
+}
+li{
+    display: inline;
+    padding: 3vw;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
